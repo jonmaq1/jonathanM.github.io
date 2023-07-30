@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(royal\ f.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    padding: 10px 28px;
+    background: goldenrod;
+    color: royalblue;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    border: solid goldenrod;
+    border-radius: 6px;
+    color: whitesmoke;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: darkgoldenrod;
+    background: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+    opacity: 0;
+    border: white;
+    border-radius: 6px;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i))
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: blue;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    text-decoration:none ;
+    transition: .5s;
+    opacity: 0;
+    animation: slideSci .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.social-media a:hover {
+    border-color: snow;
+}
+
+.social-media a i {
+    font-size: 24px;
+    color: snow;
+    
+}
+.Home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8% 0;
+    overflow: hidden;
+    text-decoration:none ;
+    transition: .5s;
+    opacity: 0;
+    animation: slideSci .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.Home-content {
+    max-width: 630px;
+}
+
+.Home-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: blue;
+}
+
+.Home-content h2 {
+    font-size: 30px;
+    color: deepskyblue;
+    border: 2px white;
+}
+
+.Home-content h3 {
+    font-size: 30px;
+    color: cornflowerblue;
+    border: 2px white;
+}
+
+.Home-content p {
+    font-size: 16px;
+    margin: 15px 0 30px;
+    color: white;
+}
+.Services-content {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Services-content h1 {
+    font-size: 30px;
+    line-height: 2;
+    color: #1743e3; 
+}
+.Services-content h2 {
+    font-size: 24px;
+    line-height: 2;
+    color: darkblue;    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: blue;
+    border: 2px solid #1743e3;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: blue;
+}
+
+
+
+table  {
+    width: 250px;
+    height: 200px;
+    background: blue;
+    color: white;
+    border-collapse: collapse;
+    border-color: #141414;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #ddd;
+    text-align: center;
+  }
+  
+  table, th, td {
+    font-family: Arial;
+    font-size: 12px;
+    color: white;
+  }
+
+.form {
+    display: inline-block;
+    padding: 10px 28px;
+    width: 250px;
+    height: 300px;
+    background: deepskyblue;
+    color: white;
+    border-collapse: collapse;
+    border-color: #141414;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    text-decoration:none ;
+    transition: .5s;
+    opacity: 0;
+    animation: slideSci .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.form:hover {
+    background: goldenrod;
+    color: white;
+}
+Contacts-content {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+Contacats-content h1 {
+    font-size: 30px;
+    line-height: 2;
+    color: #1743e3;
+}
+Contacats-content h2 {
+    font-size: 24px;
+    line-height: 2;
+    color: darkblue;
+}
+Contacats-content h3 {
+    font-size: 30px;
+    line-height: 2;
+}
+Contacats-content p {
+    font-size: 16px;
+    margin: 15px 0 30px;
+    color: snow;
+}
+News-content {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideSci {
+    0% {
+        transform: translateX(100px); 
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
